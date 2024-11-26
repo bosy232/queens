@@ -3,11 +3,20 @@ import { CreditCard, FileText, Clock, Phone } from 'lucide-react';
 
 const PatientInfo: FC = () => {
   const insuranceProviders = [
-    'Aetna Health Insurance',
-    'Blue Cross Blue Shield',
-    'Cigna Healthcare',
-    'United Healthcare',
-    'Medicare & Medicaid',
+    'Bupa',
+    'Med right',
+    'Next care',
+    'Prime health',
+    'Egycare',
+    'Al Ahly',
+    'Al Mashreq',
+    'Med Mark',
+    'Med Com',
+    'Cigna',
+    'Alpha Care',
+    'Car Gas',
+    'Enppi',
+    'SOS',
   ];
 
   return (
@@ -62,9 +71,9 @@ const PatientInfo: FC = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Important Contacts</h4>
                   <div className="text-gray-600">
-                    <p>Emergency: 123-456-7890</p>
-                    <p>Reception: 123-456-7891</p>
-                    <p>Patient Services: 123-456-7892</p>
+                    <p>Emergency: 15679</p>
+                    <p>Reception: 15679</p>
+                    <p>Patient Services: 15679</p>
                   </div>
                 </div>
               </div>
