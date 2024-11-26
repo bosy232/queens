@@ -25,11 +25,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <MapPin className="w-5 h-5 mr-2" />
-                <span className="text-pink-100">123 Medical Center Drive</span>
+                <span className="text-pink-100">HCC bldg., Tesaeen St, behind Air Force Hospital، 90 N Teseen St, New Cairo 1</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
-                <span className="text-pink-100">123-456-7890</span>
+                <span className="text-pink-100">15679</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />
