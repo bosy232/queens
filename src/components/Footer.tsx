@@ -41,13 +41,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-pink-100 hover:text-white">
+              <a href="https://web.facebook.com/QRH.Official" className="text-pink-100 hover:text-white">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-pink-100 hover:text-white">
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-pink-100 hover:text-white">
+              <a href="https://www.instagram.com/queens_royalhospital/?hl=ar" className="text-pink-100 hover:text-white">
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
