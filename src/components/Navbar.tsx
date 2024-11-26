@@ -35,7 +35,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="tel:+1234567890"
+              href="tel:15679"
               className="flex items-center bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors"
             >
               <Phone className="w-4 h-4 mr-2" />
