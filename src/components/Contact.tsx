@@ -16,7 +16,7 @@ const Contact: FC = () => {
                 <MapPin className="w-6 h-6 text-[#903060] mr-3 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-gray-600">123 Medical Center Drive, New Cairo, Egypt</p>
+                  <p className="text-gray-600">HCC bldg., Tesaeen St, (behind Air Force Hospital، 90 N Teseen St, New Cairo 1</p>
                 </div>
               </div>
               
@@ -24,7 +24,7 @@ const Contact: FC = () => {
                 <Phone className="w-6 h-6 text-[#903060] mr-3 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
-                  <p className="text-gray-600">+20 123-456-7890</p>
+                  <p className="text-gray-600">15679</p>
                 </div>
               </div>
               
