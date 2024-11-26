@@ -73,7 +73,7 @@ export default function Navbar() {
                 className="flex items-center bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors mt-4"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                Emergency: 123-456-7890
+                Emergency: 15679
               </a>
             </div>
           </div>
