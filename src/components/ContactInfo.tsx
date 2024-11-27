@@ -11,7 +11,7 @@ const ContactInfo: FC = () => {
         <div>
           <h4 className="font-semibold mb-1">Location</h4>
           <a 
-            href="https://www.google.com/maps/place/30%C2%B001'12.9%22N+31%C2%B026'08.0%22E/@30.02025,31.4355556,17z"
+            href="https://maps.app.goo.gl/YiMp2C3rBMKHX4zo8?g_st=com.google.maps.preview.copy"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-[#903060] transition-colors"
