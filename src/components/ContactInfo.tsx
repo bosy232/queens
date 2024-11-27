@@ -26,7 +26,7 @@ const ContactInfo: FC = () => {
         <div>
           <h4 className="font-semibold mb-1">Phone</h4>
           <a 
-            href="tel:+201234567890" 
+            href="tel:15679" 
             className="text-gray-600 hover:text-[#903060] transition-colors"
           >
             15679
