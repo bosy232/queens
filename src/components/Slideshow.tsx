@@ -56,22 +56,24 @@ const Slideshow: FC = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40" />
-          <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6 md:px-8 text-white">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3 md:mb-4">{slide.title}</h2>
-            <p className="text-sm sm:text-lg md:text-xl">{slide.description}</p>
+          <div className="absolute inset-0 flex flex-col justify-center px-4 md:px-8 text-white">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-2 md:mb-4">
+              {slide.title}
+            </h2>
+            <p className="text-sm sm:text-md md:text-xl">{slide.description}</p>
           </div>
         </div>
       ))}
 
       <button
         onClick={previousSlide}
-        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-1 sm:p-2 rounded-full hover:bg-opacity-50 transition-all"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-2 rounded-full hover:bg-opacity-50 transition-all"
       >
         <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-1 sm:p-2 rounded-full hover:bg-opacity-50 transition-all"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-2 rounded-full hover:bg-opacity-50 transition-all"
       >
         <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
       </button>
@@ -81,7 +83,7 @@ const Slideshow: FC = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
+            className={`w-2 h-2 rounded-full transition-all ${
               index === currentSlide ? 'bg-white w-3 sm:w-4' : 'bg-white bg-opacity-50'
             }`}
           />
