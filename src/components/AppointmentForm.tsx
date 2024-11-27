@@ -1,9 +1,14 @@
-import React from 'react';
+import { type FC, type FormEvent } from 'react';
 import { Calendar, Phone, Search } from 'lucide-react';
 
-const AppointmentForm = () => {
+const AppointmentForm: FC = () => {
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    // Handle form submission
+  };
+
   return (
-    <section id="appointment" className="py-16 bg-primary text-white">
+    <section id="appointment" className="py-16 bg-[#903060] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -26,39 +31,43 @@ const AppointmentForm = () => {
               </div>
             </div>
           </div>
-          <form className="bg-white text-gray-900 rounded-lg p-8">
+          <form onSubmit={handleSubmit} className="bg-white text-gray-900 rounded-lg p-8">
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium mb-1">Full Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary"
+                  required
+                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-[#903060]"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary"
+                  required
+                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-[#903060]"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Phone</label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary"
+                  required
+                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-[#903060]"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Preferred Date</label>
                 <input
                   type="date"
-                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary"
+                  required
+                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-[#903060]"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark transition-colors"
+                className="w-full bg-[#903060] text-white py-2 rounded-md hover:bg-[#802050] transition-colors"
               >
                 Request Appointment
               </button>
