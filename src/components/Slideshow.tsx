@@ -42,13 +42,13 @@ const Slideshow: FC = () => {
   };
 
   return (
-    <div className="relative h-[300px] md:h-[500px] overflow-hidden rounded-lg">
+    <div className="relative h-[500px] overflow-hidden rounded-lg">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute w-full h-full transition-opacity duration-500 ${
+          className={absolute w-full h-full transition-opacity duration-500 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
+          }}
         >
           <img
             src={slide.image}
@@ -56,34 +56,34 @@ const Slideshow: FC = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40" />
-          <div className="absolute inset-0 flex flex-col justify-center px-4 md:px-8 text-white">
-            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4">{slide.title}</h2>
-            <p className="text-sm md:text-xl">{slide.description}</p>
+          <div className="absolute inset-0 flex flex-col justify-center px-8 text-white">
+            <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
+            <p className="text-xl">{slide.description}</p>
           </div>
         </div>
       ))}
 
       <button
         onClick={previousSlide}
-        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-1 md:p-2 rounded-full hover:bg-opacity-50 transition-all"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-2 rounded-full hover:bg-opacity-50 transition-all"
       >
-        <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-white" />
+        <ChevronLeft className="w-6 h-6 text-white" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-1 md:p-2 rounded-full hover:bg-opacity-50 transition-all"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 p-2 rounded-full hover:bg-opacity-50 transition-all"
       >
-        <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
+        <ChevronRight className="w-6 h-6 text-white" />
       </button>
 
-      <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 flex space-x-1 md:space-x-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-white w-3 md:w-4' : 'bg-white bg-opacity-50'
-            }`}
+            className={w-2 h-2 rounded-full transition-all ${
+              index === currentSlide ? 'bg-white w-4' : 'bg-white bg-opacity-50'
+            }}
           />
         ))}
       </div>
